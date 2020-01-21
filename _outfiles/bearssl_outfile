@@ -1,0 +1,14 @@
+src/symcipher/aes_x86ni_ctr.c: In function ‘br_aes_x86ni_ctr_run’:
+src/symcipher/aes_x86ni_ctr.c:186:1: warning: Loop ctr var suspected range mismatch. [-Wall]
+  186 | }
+      | ^
+src/symcipher/aes_x86ni_ctr.c:179:18: warning: Loop ctr var suspected range mismatch. [-Wall]
+  179 |     buf[u] ^= tmp[u];
+      |               ~~~^~~
+src/symcipher/aes_x86ni_ctrcbc.c: In function ‘br_aes_x86ni_ctrcbc_ctr’:
+src/symcipher/aes_x86ni_ctrcbc.c:252:1: warning: Loop ctr var suspected range mismatch. [-Wall]
+  252 | }
+      | ^
+src/symcipher/aes_x86ni_ctrcbc.c:206:18: warning: Loop ctr var suspected range mismatch. [-Wall]
+  206 |     buf[u] ^= tmp[u];
+      |               ~~~^~~

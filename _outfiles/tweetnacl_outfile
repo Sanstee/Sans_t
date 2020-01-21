@@ -1,0 +1,23 @@
+./tweetnacl-usable/tweetnacl.c: In function ‘crypto_sign_ed25519_tweet’:
+./tweetnacl-usable/tweetnacl.c:723:26: warning: Loop ctr var suspected range mismatch. [-Wall]
+  723 |   FOR(i,n) sm[64 + i] = m[i];
+      |                         ~^~~
+./tweetnacl-usable/tweetnacl.c:723:14: warning: Loop ctr var suspected range mismatch. [-Wall]
+  723 |   FOR(i,n) sm[64 + i] = m[i];
+      |            ~~^~~~~~~~
+./tweetnacl-usable/tweetnacl.c: In function ‘crypto_sign_ed25519_tweet_open’:
+./tweetnacl-usable/tweetnacl.c:790:21: warning: Loop ctr var suspected range mismatch. [-Wall]
+  790 |   FOR(i,n) m[i] = sm[i];
+      |                   ~~^~~
+./tweetnacl-usable/tweetnacl.c:790:13: warning: Loop ctr var suspected range mismatch. [-Wall]
+  790 |   FOR(i,n) m[i] = sm[i];
+      |            ~^~~
+./tweetnacl-usable/tweetnacl.c:802:15: warning: Loop ctr var suspected range mismatch. [-Wall]
+  802 |     FOR(i,n) m[i] = 0;
+      |              ~^~~
+./tweetnacl-usable/tweetnacl.c:806:21: warning: Loop ctr var suspected range mismatch. [-Wall]
+  806 |   FOR(i,n) m[i] = sm[i + 64];
+      |                   ~~^~~~~~~~
+./tweetnacl-usable/tweetnacl.c:806:13: warning: Loop ctr var suspected range mismatch. [-Wall]
+  806 |   FOR(i,n) m[i] = sm[i + 64];
+      |            ~^~~
